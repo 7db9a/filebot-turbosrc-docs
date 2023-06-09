@@ -1,11 +1,10 @@
 ## Adding and endpoint or feature to Turbosrc.
 
-When creating an a new endpoint for turbosrc-service, you must update one of the following subystems
-- turbosrc-engine
-- turbosrc-namespace
-in addition to updating turbosrc-service.
+When creating an a new endpoint for turbosrc-service. Depending on the type of endpoint, you update turbosrc-engine or turbosrc-namespace (but never both)
 
 ### Example new endpoint
+
+In this example, turbosrc-engine is updated along with turbosrc-service.
 
 ***getVotes**
 
