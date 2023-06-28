@@ -17,3 +17,4 @@ Date,Item,Completion date,Responsibility,Side,Type,Status,Note
 3/23/0203,Database sprint completion,,Platform,,,NotStarted,"Nail down types, field constrains, monitoring and tracing, and A and B rededeploy strategy. May move entirely to neon or other cloud to better manage."
 3/23/0203,Chrome Store Official submit,,Platform,,,NotStarted,Should give 5 business days. Will double check that timeline.
 6/13/2023,tsrc-dev Auto NPM install,,Platform,,,NotStarted,Detect package.json change and run npm install
+6/28/2023,Add dev tools to monorepo,,David,,Platform,,,Responsibility stated in task description
