@@ -1,0 +1,19 @@
+Date,Item,Completion date,Responsibility,Side,Type,Status,Note
+3/22/2023,Types and Error returns,,Platform,,,"Not 100% sure which types, status code numbers?",Return types and and expanded error handling. We have some general types where it should be more specific.
+3/22/0203,General Refactor,,Platform,,,"In progress, setVote and convertDefaultHash refactored, some other minor optimizations","Clean up vestiges of past sprints. Code style enforcement. Streamline modules, certain functions, file organization, api endpoint conventions"
+3/22/0203,Refresh Button,,Platform,,,Completed,
+3/22/0203,Vote button progress nail down,,Platform,,,In progress,Make it clear what's happening as votes progress.
+3/22/0203,Other UI nicities,,Platform,,,In progress,
+3/22/0203,Vote stats and contributor list,,Platform,,,In progress,User will be able to see basic vote stats and contributors of project
+3/22/2023,Deployment security,,Platform,,,,Cloudflare or alternative. Reduce network and other surface area of deploys
+3/23/2023,Basic API login,,"Platform
+",,,In progress,JWT login strategy for endpoints. Basic as a lot of security will be enforced thru continued crypto under the hood and beyond to Web 3.
+3/23/0203,Point reibase subdomain to api endpoint,,Platform,,,,
+3/23/0203,Documentation,,Platform,,,, Aim to help pass Chrome Store Review. Should be already on way as needed for Chrome Store dev submit too.
+3/23/0203,Performance Profiling ,,Platform,,,In progress,General need plus from Chrome Store Review.
+3/23/0203,Chrome Store Dev submit,,Platform,,,,
+3/23/0203,"Recircle on issues, loose ends",,Platform,,,,
+3/23/0203,A and B deploy strategy,,Platform,,,,
+3/23/0203,Database sprint completion,,Platform,,,,"Nail down types, field constrains, monitoring and tracing, and A and B rededeploy strategy. May move entirely to neon or other cloud to better manage."
+3/23/0203,Chrome Store Official submit,,Platform,,,,Should give 5 business days. Will double check that timeline.
+6/13/2023,tsrc-dev Auto NPM install,,,,,,Detect package.json change and run npm install
