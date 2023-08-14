@@ -56,3 +56,88 @@ Replace `<submodule-name>` with the name of the submodule that you want to delet
 * To push all changes in the submodules: `git push --recurse-submodules=on-demand`
 
 Remember to regularly pull changes from the remote branches to keep your local copies up-to-date.
+
+#### Get lastest changes
+
+`git pull` and `git submodule update --remote`
+
+### Make changes
+
+Here is an example
+
+**1. Checkout feature branch in the turbo-src**
+
+```git checkout -b myFeature```
+
+**2. Checkout feature branch in the targeted submodule**
+
+```
+cd turbosrc-engine
+git checkout -b myFeature
+```
+
+**3. Stage and commit in both the submodule and monorepo after you make changes.**
+
+`turbosrc-engine`
+
+```
+git add <file>
+git commmit -m "New feature!"
+```
+
+`turbo-src`
+
+```
+git add <submodule>
+git commmit -m "New feature!"
+```
+
+**4. Push changes to both the submodule and the monorepo.**
+
+`turbosrc-engine`
+
+```
+git push origin myFeature
+```
+
+`turbo-src`
+
+```
+git push origin myFeature
+```
+
+**5. Pull in new changes form monorepo and submodules**
+
+`turbo-src`
+
+```
+git pull origin myFeature
+```
+
+**6. Go back to master and forget about myFeature**
+
+`turbo-src`
+
+```
+git checkout master
+git submodule update --init --recursive
+```
+
+**7. You want to go back into myFeature branch.**
+
+`turbo-src`
+
+```
+git checkout myFeature
+git submodule update --init --recursive
+```
+
+**8. Let's say another developer wants to experiment with this new feature.**
+
+`turbo-src`
+
+```
+git fetch origin myFeature
+git checkout myFeature
+git submodule update --init --recursive
+```
